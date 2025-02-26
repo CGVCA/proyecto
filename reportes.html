@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />-->
+    <script src="js/reportes.js"></script>
+    <title>Sistema de Movilidad Acad&eacute;mica</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="cgvca.html">CGVCA</a>
+            <a href="convocatorias.html">Convocatorias</a>
+            <a href="reportes.html" class="active">Reportes</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <section class="textos-header text-sombra">
+            <div class="contenedor-logo-header">
+                <img src="img/logo-light.png" alt="" class="logo-header animate__animated animate__flipInX">
+            </div>
+            <h1 class="animate__animated animate__zoomInUp">Reportes de Movilidad Académica</h1>
+        </section>
+        <div class="wave sombra-wave animate__animated animate__zoomInDown" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 110" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="stroke: none; fill: #DD971A;"></path>
+        </svg>
+        </div>
+    </header>
+    <main>
+        <section id="reportes" class="reportes-seccion">
+            <div class="contenedor">
+                <div class="contenedor-reportes">
+                    <h2 class="titulo-reportes">Galería de Reportes de Movilidad Académica</h2>
+
+                    <!-- Slider de Reportes -->
+                    <div class="slider-container">
+                        <div class="galeria-reportes">
+                            <!-- Cada elemento de la galería puede ser una imagen o un enlace a un documento -->
+                            <div class="reporte-item">
+                                <a href="reportes/mes1.pdf" target="_blank">
+                                    <img src="img/reporte.jpg" alt="Reporte Mes 1" class="img-reporte">
+                                </a>
+                                <p>Enero</p>
+                            </div>
+                            <div class="reporte-item">
+                                <a href="reportes/mes2.pdf" target="_blank">
+                                    <img src="img/reporte.jpg" alt="Reporte Mes 2" class="img-reporte">
+                                </a>
+                                <p>Febrero</p>
+                            </div>
+                            <div class="reporte-item">
+                                <a href="reportes/mes3.pdf" target="_blank">
+                                    <img src="img/reporte.jpg" alt="Reporte Mes 3" class="img-reporte">
+                                </a>
+                                <p>Marzo</p>
+                            </div>
+                            <div class="reporte-item">
+                                <a href="reportes/mes1.pdf" target="_blank">
+                                    <img src="img/reporte.jpg" alt="Reporte Mes 1" class="img-reporte">
+                                </a>
+                                <p>Abril</p>
+                            </div>
+                            <div class="reporte-item">
+                                <a href="reportes/mes2.pdf" target="_blank">
+                                    <img src="img/reporte.jpg" alt="Reporte Mes 2" class="img-reporte">
+                                </a>
+                                <p>Mayo</p>
+                            </div>
+                            <div class="reporte-item">
+                                <a href="reportes/mes3.pdf" target="_blank">
+                                    <img src="img/reporte.jpg" alt="Reporte Mes 3" class="img-reporte">
+                                </a>
+                                <p>Junio</p>
+                            </div>
+                            <div class="reporte-item">
+                                <a href="reportes/mes3.pdf" target="_blank">
+                                    <img src="img/reporte.jpg" alt="Reporte Mes 3" class="img-reporte">
+                                </a>
+                                <p>Julio</p>
+                            </div>
+                            <div class="reporte-item">
+                                <a href="reportes/mes3.pdf" target="_blank">
+                                    <img src="img/reporte.jpg" alt="Reporte Mes 3" class="img-reporte">
+                                </a>
+                                <p>Agosto</p>
+                            </div>
+                            <div class="reporte-item">
+                                <a href="reportes/mes3.pdf" target="_blank">
+                                    <img src="img/reporte.jpg" alt="Reporte Mes 3" class="img-reporte">
+                                </a>
+                                <p>Septiembre</p>
+                            </div>
+                            <div class="reporte-item">
+                                <a href="reportes/mes3.pdf" target="_blank">
+                                    <img src="img/reporte.jpg" alt="Reporte Mes 3" class="img-reporte">
+                                </a>
+                                <p>Novimebre</p>
+                            </div>
+                            <div class="reporte-item">
+                                <a href="reportes/mes3.pdf" target="_blank">
+                                    <img src="img/reporte.jpg" alt="Reporte Mes 3" class="img-reporte">
+                                </a>
+                                <p>Diciembre</p>
+                            </div>
+                        </div>
+                        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                    </div>
+
+                    <!-- Gráficas de los Reportes -->
+                    <div class="graficas-reportes">
+                        <h3>Gráficas de Movilidad Académica</h3>
+                        <div class="contenedor-graficas">
+                            <canvas id="graficoBarras" width="200" height="100"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <h2 class="titulo-final">2025 &copy; SGMA | UABC</h2>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/grafica.js"></script>
+</body>
+
+</html>

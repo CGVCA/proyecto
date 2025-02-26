@@ -1,0 +1,1173 @@
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: 'Open Sans', sans-serif;
+            }
+            
+            .contenedor {
+                padding: 60px 0;
+                width: 90%;
+                max-width: 1000px;
+                margin: auto;
+                overflow: hidden;
+            }
+            
+            .titulo {
+                color: #642a73;
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 60px;
+            }
+            /* HEADER */
+            
+            header {
+                width: 100%;
+                height: 600px;
+                background: #00723F;
+                /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, hsl(153, 100%, 22%, 0.85), hsl(153, 100%, 22%, 0.85)), url(../img/banner.jpg);
+                /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, hsl(153, 100%, 22%, 0.85), hsl(153, 100%, 22%, 0.85)), url(../img/banner.jpg);
+                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                position: relative;
+                animation: movimiento 10s infinite linear alternate !important;
+            }
+            
+            nav {
+                text-align: right;
+                padding: 30px 50px 0 0;
+            }
+            
+            nav>a {
+                color: #fff;
+                font-size: 1.2rem;
+                font-weight: 500;
+                text-decoration: none;
+                margin-right: 10px;
+                text-shadow: 0.1em 0.1em 0.15em #333;
+            }
+            
+            nav>a:hover {
+                /*text-decoration: underline;*/
+                color: #DD971A;
+                font-weight: bold;
+            }
+            
+            nav a.active {
+                color: #DD971A;
+                font-weight: bold;
+            }
+            
+            header .textos-header {
+                display: flex;
+                height: 430px;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .textos-header h1 {
+                font-size: 40px;
+                color: #fff;
+                padding: 0 0 20px 0;
+            }
+            
+            .textos-header h2 {
+                font-size: 30px;
+                font-weight: 300;
+                color: #fff;
+            }
+            
+            .contenedor-logo-header {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            
+            .logo-header {
+                width: 16%;
+                margin-bottom: 30px;
+                filter: drop-shadow(0 0 0.55rem #fff);
+            }
+            
+            .wave {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+            
+            .sombra-wave {
+                -webkit-box-shadow: 0px 5px 15px 0px rgb(112 112 112 / 48%);
+                -moz-box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.48);
+                box-shadow: 0px 5px 15px 0px rgb(112 112 112 / 48%);
+                background-color: var(--blanco);
+            }
+            /* Utilidades */
+            
+            .text-sombra {
+                text-shadow: 0.1em 0.1em 0.15em #333;
+            }
+            /* Programa de Movilidad Academica */
+            
+            main .sobre-movilidad {
+                padding: 90px 0 60px 0;
+            }
+            
+            .contenedor-considerando {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: -20px;
+            }
+            
+            .considerando-text {
+                width: 100%;
+            }
+            
+            .considerando-texto h3 {
+                margin-bottom: 15px;
+            }
+            
+            .considerando-texto h3 span {
+                background: #4d0686;
+                color: #fff;
+                border-radius: 50%;
+                display: inline-block;
+                text-align: center;
+                font-size: 1.1rem;
+                font-weight: 300;
+                width: 30px;
+                height: 30px;
+                padding: 2px;
+                box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+                margin-right: 5px;
+            }
+            
+            .considerando-texto p {
+                padding: 0px 0px 50px 0px;
+                font-size: 1.1rem;
+                font-weight: 300;
+                text-align: justify;
+            }
+            
+            .contenedor-sobre-movilidad {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            
+            .imagen-movilidad {
+                width: 48%;
+            }
+            
+            .sobre-movilidad .contenido-textos {
+                width: 48%;
+            }
+            
+            .sobre-movilidad .contenido-textos ul {
+                padding-left: 40px;
+            }
+            
+            .sobre-movilidad .contenido-textos ul li {
+                margin-bottom: 10px;
+            }
+            
+            .contenido-textos h3 {
+                margin-bottom: 15px;
+            }
+            
+            .contenido-textos h3 span {
+                background: #4d0686;
+                color: #fff;
+                border-radius: 50%;
+                display: inline-block;
+                text-align: center;
+                width: 30px;
+                height: 30px;
+                padding: 2px;
+                box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+                margin-right: 5px;
+            }
+            
+            .contenido-textos p {
+                padding: 0px 0px 30px 15px;
+                font-weight: 300;
+                text-align: justify;
+            }
+            /* Galeria */
+            
+            .portafolio {
+                background: #f2f2f2;
+            }
+            
+            .galeria-port {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+            
+            .imagen-port {
+                width: 24%;
+                margin-bottom: 10px;
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+                box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+            }
+            
+            .imagen-port>img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+            
+            .hover-galeria {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                transform: scale(0);
+                background: hsla(273, 91%, 27%, 0.7);
+                transition: transform .5s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            
+            .hover-galeria img {
+                width: 50px;
+            }
+            
+            .hover-galeria p {
+                color: #fff;
+            }
+            
+            .imagen-port:hover .hover-galeria {
+                transform: scale(1);
+            }
+            /* Clients */
+            
+            .cards {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+            }
+            
+            .cards .card {
+                background: #4d0686;
+                display: flex;
+                width: 60%;
+                height: 200px;
+                align-items: center;
+                justify-content: space-evenly;
+                border-radius: 5px;
+                box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+            }
+            
+            .cards .card img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border: 3px solid #fff;
+                border-radius: 50%;
+                display: block;
+            }
+            
+            .cards .card>.contenido-texto-card {
+                width: 60%;
+                color: #fff;
+            }
+            
+            .cards .card>.contenido-texto-card p {
+                font-weight: 300;
+                padding-top: 5px;
+            }
+            /*  Our team */
+            
+            .about-services {
+                background: #f2f2f2;
+                padding-bottom: 30px;
+            }
+            
+            .servicio-cont {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .servicio-ind {
+                width: 28%;
+                text-align: center;
+            }
+            
+            .servicio-ind img {
+                width: 90%;
+            }
+            
+            .servicio-ind h3 {
+                margin: 10px 0;
+            }
+            
+            .servicio-ind p {
+                font-weight: 300;
+                text-align: justify;
+            }
+            /* beneficio de participar  */
+            
+            .beneficios-movilidad {
+                padding: 60px 20px;
+                background-color: #fff;
+                text-align: center;
+            }
+            
+            .beneficios-movilidad h2 {
+                font-size: 30px;
+                color: #642a73;
+                margin-bottom: 30px;
+            }
+            
+            .beneficios-movilidad .cards-container {
+                display: flex;
+                flex-wrap: wrap;
+                /* Para permitir que los elementos se ajusten a la siguiente fila */
+                justify-content: space-between;
+                /* Espacio entre los cards */
+                gap: 20px;
+                /* Espacio entre los elementos */
+            }
+            
+            .card {
+                display: inline-block;
+                width: 23%;
+                /* Ajusta el tamaño de los cards para que haya 4 por fila */
+                margin: 15px 0;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                background-color: white;
+                transition: transform 0.3s ease-in-out;
+            }
+            
+            .card:hover {
+                transform: scale(1.05);
+            }
+            
+            .card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+            
+            .card-content {
+                padding: 10px;
+            }
+            
+            .card-content h3 {
+                font-size: 18px;
+                color: #642a73;
+                margin: 0;
+                text-align: left;
+                font-weight: bold;
+            }
+            
+            .beneficios-movilidad {
+                padding: 60px 20px;
+                background-color: #fff;
+                text-align: center;
+            }
+            
+            .beneficios-movilidad h2 {
+                font-size: 30px;
+                color: #642a73;
+                margin-bottom: 30px;
+            }
+            
+            .card {
+                display: inline-block;
+                width: 300px;
+                margin: 15px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                background-color: white;
+                transition: transform 0.3s ease-in-out;
+            }
+            
+            .card:hover {
+                transform: scale(1.05);
+            }
+            
+            .card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                /* Asegura que la imagen cubra completamente el espacio */
+            }
+            
+            .card-content {
+                padding: 10px;
+            }
+            
+            .card-content h3 {
+                font-size: 18px;
+                color: #642a73;
+                margin: 0;
+                text-align: left;
+                font-weight: bold;
+            }
+            /* requisitos */
+            
+            .requisitos-procedimiento {
+                padding: 60px 20px;
+                background-color: #f2f2f2;
+                text-align: center;
+            }
+            
+            .requisitos-procedimiento h2 {
+                font-size: 32px;
+                color: #642a73;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+            
+            .requisitos-procedimiento p {
+                font-size: 18px;
+                color: #555;
+                margin-bottom: 40px;
+            }
+            
+            .steps {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            
+            .step {
+                background-color: white;
+                border-radius: 15px;
+                padding: 20px;
+                width: 250px;
+                margin: 15px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease-in-out;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                min-height: 250px;
+            }
+            
+            .step:hover {
+                transform: scale(1.05);
+            }
+            
+            .step img {
+                width: 100%;
+                height: 100px;
+                margin: 0 auto 15px auto;
+                /* Centra la imagen en el card */
+                display: block;
+                /* Asegura que la imagen sea un bloque */
+            }
+            
+            .step h3 {
+                font-size: 20px;
+                color: #642a73;
+                margin-bottom: 10px;
+            }
+            
+            .step p {
+                font-size: 16px;
+                color: #666;
+            }
+            
+            .arrow {
+                font-size: 40px;
+                /* Aumenta el tamaño de la flecha */
+                font-weight: bold;
+                /* Hace la flecha más gruesa */
+                color: #642a73;
+                margin: 0 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                /* Ajusta la altura para centrar la flecha */
+            }
+            
+            @media (max-width: 768px) {
+                .steps {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .arrow {
+                    margin: 15px 0;
+                }
+            }
+            /* CGVCA */
+            
+            .cgvca {
+                padding: 30px 0;
+                text-align: center;
+            }
+            
+            .cgvca {
+                display: flex;
+                align-items: center;
+                /* Alinea verticalmente la imagen y el texto */
+                justify-content: space-between;
+                /* Asegura que la imagen y el texto estén separados */
+                padding: 40px;
+                /* Agrega un poco de espacio alrededor de la sección */
+            }
+            
+            .cgvca img {
+                width: 40%;
+                /* Ajusta el tamaño de la imagen según sea necesario */
+                object-fit: cover;
+                /* Asegura que la imagen cubra bien el espacio */
+                border-radius: 8px;
+                /* Bordes redondeados en la imagen */
+            }
+            
+            .cgvca .texto {
+                width: 55%;
+                /* Ajusta el tamaño del contenedor de texto */
+                font-size: 1.1rem;
+                color: #555;
+                /* Ajusta el color del texto */
+                line-height: 1.6;
+                /* Mejora la legibilidad */
+            }
+            
+            .cgvca h2 {
+                margin-top: 30px;
+            }
+            
+            .cgvca p {
+                margin-top: 20px;
+                font-size: 1rem;
+            }
+            
+            .mision-vision {
+                background-color: #f2f2f2;
+                padding: 30px 0;
+                text-align: center;
+            }
+            
+            .mision-vision h2 {
+                margin-bottom: 2rem;
+            }
+            
+            .contenedor-imagen-texto {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                transition: transform 0.3s ease;
+                /* Transición suave */
+            }
+            
+            .texto {
+                width: 55%;
+                font-size: 1.2rem;
+                text-align: left;
+                transition: opacity 0.3s ease;
+                /* Efecto de opacidad en el texto */
+                border-radius: 10px;
+                /* Ajuste para hacer más sutil el borde redondeado */
+            }
+            
+            .imagen-cgvca {
+                width: 45%;
+                max-width: 100%;
+                transition: transform 0.3s ease;
+                /* Efecto de transformación al pasar el ratón */
+            }
+            
+            .imagen-cgvca:hover {
+                transform: scale(1.1);
+                /* Aumenta el tamaño de la imagen al pasar el ratón */
+            }
+            
+            .texto:hover {
+                opacity: 0.8;
+                /* Disminuye la opacidad del texto al pasar el ratón */
+            }
+            /* Opcional: agregar espacio entre imagen y texto */
+            
+            .contenedor-imagen-texto .imagen {
+                margin-right: 20px;
+            }
+            
+            .card {
+                width: 30%;
+                background: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            
+            .card h3 {
+                margin: 10px 0;
+            }
+            
+            .card p {
+                text-align: justify;
+            }
+            /* Sección Convocatorias */
+            
+            .convocatorias {
+                padding: 60px 20px;
+                background-color: #f4f4f4;
+                text-align: center;
+            }
+            /* Título de la sección */
+            
+            .convocatorias .titulo {
+                font-size: 32px;
+                color: #642a73;
+                margin-bottom: 40px;
+            }
+            /* Galería de las tarjetas de convocatorias */
+            
+            .galeria-convocatorias {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                gap: 20px;
+            }
+            /* SECCION CONVOCATORIAS */
+            /* Sección Convocatorias */
+            
+            .convocatorias {
+                padding: 60px 20px;
+                background-color: #f4f4f4;
+                text-align: center;
+            }
+            /* Título de la sección */
+            
+            .convocatorias .titulo {
+                font-size: 32px;
+                color: #642a73;
+                margin-bottom: 40px;
+            }
+            /* Galería de las tarjetas de convocatorias */
+            
+            .galeria-convocatorias {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                gap: 20px;
+            }
+            /* Estilo de cada card de convocatoria */
+            
+            .card-convocatoria {
+                background-color: white;
+                width: 300px;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                /* Esto es necesario para que el botón se posicione encima de la imagen */
+                transition: transform 0.3s ease-in-out;
+            }
+            /* Efecto al pasar el mouse sobre la tarjeta */
+            
+            .card-convocatoria:hover {
+                transform: scale(1.05);
+                /* Efecto de zoom */
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+                /* Sombra más grande al hacer hover */
+            }
+            /* Contenedor de la imagen */
+            
+            .card-convocatoria-img {
+                width: 100%;
+                height: 350px;
+                /* Ajusta la altura según el tamaño del card */
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                /* Para permitir que el overlay y el botón se posicionen encima */
+            }
+            /* Imagen dentro de la tarjeta, ajustada al tamaño del contenedor */
+            
+            .card-convocatoria-img img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                /* Ajusta la imagen sin cortarla, manteniendo la proporción */
+                object-position: center;
+                /* Alinea la imagen al centro */
+                transition: transform 0.5s ease-in-out;
+            }
+            /* Overlay (capa de superposición) que cubre la imagen al hacer hover */
+            
+            .card-convocatoria-img .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: hsla(273, 91%, 27%, 0.5);
+                /* Fondo oscuro con transparencia */
+                opacity: 0;
+                /* Inicialmente invisible */
+                visibility: hidden;
+                /* Inicialmente no visible */
+                transition: opacity 0.3s, visibility 0.3s;
+                /* Transición suave */
+            }
+            /* Botón "Ver detalles" */
+            
+            .btn-convocatoria {
+                background-color: #DD971A;
+                color: #000;
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-weight: bold;
+                transition: background-color 0.3s;
+                opacity: 0;
+                /* Inicialmente invisible */
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                visibility: hidden;
+                /* Inicialmente no visible */
+                z-index: 1;
+                /* Asegura que esté encima de la imagen y overlay */
+            }
+            /* Efecto hover en la imagen */
+            
+            .card-convocatoria-img:hover .overlay {
+                opacity: 1;
+                /* Hace que el overlay sea visible */
+                visibility: visible;
+                /* Asegura que el overlay sea visible */
+            }
+            /* Hacer que el botón sea visible en el hover */
+            
+            .card-convocatoria-img:hover .btn-convocatoria {
+                opacity: 1;
+                /* Hace que el botón sea visible */
+                visibility: visible;
+                /* Asegura que el botón sea visible */
+            }
+            /* Efecto hover para el botón */
+            
+            .card-convocatoria-texto .btn-convocatoria:hover {
+                background-color: #DD971A;
+                box-shadow: 0 0 10px 2px white;
+            }
+            /* CONTACTO */
+            
+            .contacto {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                gap: 20px;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            
+            .contacto-content {
+                display: flex;
+                gap: 20px;
+                width: 100%;
+            }
+            
+            .contacto-content .card {
+                flex: 1;
+                min-width: 45%;
+                background-color: #fff;
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: box-shadow 0.3s ease-in-out;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .contacto-content .card:hover {
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+            
+            .mapa {
+                flex: 1;
+                min-width: 45%;
+                background-color: #fff;
+                border-radius: 8px;
+                padding: 20px;
+                /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .mapa iframe {
+                width: 100%;
+                height: 500px;
+                border-radius: 8px;
+                border: none;
+            }
+            
+            .form-contacto {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .form-contacto .campo {
+                margin-bottom: 15px;
+            }
+            
+            .form-contacto label {
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            
+            .form-contacto input,
+            .form-contacto textarea {
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                width: 100%;
+                font-size: 1rem;
+            }
+            
+            .form-contacto textarea {
+                min-height: 150px;
+            }
+            
+            .form-contacto button {
+                padding: 10px 20px;
+                background-color: #DD971A;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1rem;
+                transition: background-color 0.3s;
+            }
+            
+            .form-contacto button:hover {
+                background-color: #b3690d;
+            }
+            
+            .imagenes-circulares {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 50px 0;
+            }
+            
+            .contenedor-imagenes {
+                display: flex;
+                gap: 30px;
+                /* Espacio entre las imágenes */
+            }
+            /* IMAGEN CIRCULAR */
+            
+            .imagen-circular-con-titulo {
+                text-align: center;
+                /* Centra el título debajo de la imagen */
+                margin-bottom: 20px;
+                /* Espacio entre la imagen y el siguiente elemento */
+            }
+            
+            .titulo-imagen {
+                font-size: 18px;
+                /* Ajusta el tamaño de la fuente */
+                margin-bottom: 10px;
+                /* Espacio entre el título y la imagen */
+                color: #333;
+                /* Color del texto */
+            }
+            
+            .imagen-circular {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                overflow: hidden;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            }
+            
+            .imagen-circular img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+            .imagen-circular:hover {
+                transform: scale(1.1);
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            }
+            /* REPORTES DE MOVILIDAD ACADEMICA */
+            
+            .reportes-seccion {
+                padding: 20px;
+                background-color: #f4f4f4;
+            }
+            
+            .titulo-reportes {
+                text-align: center;
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+            
+            .slider-container {
+                position: relative;
+                width: 100%;
+                max-width: 700px;
+                /* Ajusta el tamaño del slider */
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            
+            .galeria-reportes {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+                /* Animación suave al cambiar de slide */
+            }
+            
+            .reporte-item {
+                text-align: center;
+                width: 33.33%;
+                /* Cambié el ancho de cada item al 25% para mostrar 4 imágenes */
+                flex-shrink: 0;
+                /* Impide que los elementos se encojan */
+                margin: 0 10px;
+                /* Añadí un pequeño margen entre los elementos */
+            }
+            
+            .img-reporte {
+                width: 90%;
+                /* Ajusta el ancho de las imágenes dentro de cada item */
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            
+            .graficas-reportes {
+                margin-top: 40px;
+                text-align: center;
+            }
+            
+            .contenedor-graficas {
+                display: flex;
+                justify-content: space-around;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+            
+            canvas {
+                border: 1px solid #ccc;
+                border-radius: 8px;
+            }
+            
+            button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                font-size: 2em;
+                z-index: 1;
+            }
+            
+            button:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+            
+            .prev {
+                left: 10px;
+            }
+            
+            .next {
+                right: 10px;
+            }
+            /* footer */
+            
+            footer {
+                background: #00723F;
+                border-top: 6px solid #DD971A;
+                padding: 10px 0 30px 0;
+                margin: auto;
+                overflow: hidden;
+            }
+            
+            .contenedor-footer {
+                display: flex;
+                width: 90%;
+                justify-content: space-evenly;
+                margin: auto;
+                padding-bottom: 50px;
+                border-bottom: 1px solid #ccc;
+            }
+            
+            .content-foo {
+                text-align: center;
+            }
+            
+            .content-foo h4 {
+                color: #fff;
+                border-bottom: 3px solid #af20d3;
+                padding-bottom: 5px;
+                margin-bottom: 10px;
+            }
+            
+            .content-foo p {
+                color: #ccc;
+            }
+            
+            .titulo-final {
+                text-align: center;
+                font-size: 14px;
+                margin: 20px 0 0 0;
+                color: #fff;
+                text-shadow: 0.1em 0.1em 0.15em #333;
+            }
+            /* Animaciones */
+            
+            @keyframes movimiento {
+                from {
+                    background-position: bottom left;
+                }
+                to {
+                    background-position: top right;
+                }
+            }
+            /* Dispositivos adalpatbles */
+            
+            @media screen and (max-width:900px) {
+                header {
+                    background-position: center;
+                }
+                .contenedor-sobre-movilidad {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .sobre-movilidad .contenido-textos {
+                    width: 90%;
+                }
+                .imagen-movilidad {
+                    width: 90%;
+                }
+                /* Galeria */
+                .imagen-port {
+                    width: 44%;
+                }
+                .logo-header {
+                    width: 44%;
+                }
+                /* Clientes */
+                .cards {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .cards .card {
+                    width: 90%;
+                }
+                .cards .card:first-child {
+                    margin-bottom: 30px;
+                }
+                /* servicios */
+                .servicio-cont {
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                .servicio-ind {
+                    width: 100%;
+                    text-align: center;
+                }
+                .servicio-ind:nth-child(1),
+                .servicio-ind:nth-child(2) {
+                    margin-bottom: 60px;
+                }
+                .servicio-ind img {
+                    width: 90%;
+                }
+            }
+            
+            @media screen and (max-width:500px) {
+                nav {
+                    text-align: center;
+                    padding: 30px 0 0 0;
+                }
+                nav>a {
+                    margin-right: 5px;
+                }
+                .textos-header h1 {
+                    font-size: 35px;
+                }
+                .textos-header h2 {
+                    font-size: 20px;
+                }
+                /* ABOUT US */
+                .imagen-movilidad {
+                    margin-bottom: 60px;
+                    width: 99%;
+                }
+                .sobre-movilidad .contenido-textos {
+                    width: 95%;
+                }
+                /* Galeria */
+                .imagen-port {
+                    width: 95%;
+                }
+                .logo-header {
+                    width: 44%;
+                }
+                /* Clients */
+                .cards .card {
+                    height: 450px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .cards .card img {
+                    width: 90px;
+                    height: 90px;
+                }
+                /* Footer */
+                .contenedor-footer {
+                    flex-direction: column;
+                    border: none;
+                }
+                .content-foo {
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                .content-foo h4 {
+                    border: none;
+                }
+                .content-foo p {
+                    color: #ccc;
+                    border-bottom: 1px solid #f2f2f2;
+                    padding-bottom: 20px;
+                }
+                .titulo-final {
+                    font-size: 20px;
+                }
+            }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />-->
+    <title>Sistema de Movilidad Acad&eacute;mica</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="cgvca.html">CGVCA</a>
+            <a href="convocatorias.html">Convocatorias</a>
+            <a href="reportes.html">Reportes</a>
+            <a href="contacto.html" class="active">Contacto</a>
+        </nav>
+        <section class="textos-header text-sombra">
+            <div class="contenedor-logo-header">
+                <img src="img/logo-light.png" alt="" class="logo-header animate__animated animate__flipInX">
+            </div>
+            <h1 class="animate__animated animate__zoomInUp">Contacto</h1>
+        </section>
+        <div class="wave sombra-wave animate__animated animate__zoomInDown" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 110" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="stroke: none; fill: #DD971A;"></path>
+        </svg>
+        </div>
+    </header>
+    <main>
+        <section class="contacto">
+            <div class="contenedor">
+                <div class="contacto-content">
+                    <!-- Card para el formulario de contacto -->
+                    <div class="card">
+                        <h2 class="titulo">Contáctanos</h2>
+                        <form class="form-contacto">
+                            <div class="campo">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="campo">
+                                <label for="email">Correo Electrónico:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="campo">
+                                <label for="mensaje">Mensaje:</label>
+                                <textarea id="mensaje" name="mensaje" required></textarea>
+                            </div>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <!-- Contenedor para el mapa sin la clase .card -->
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.864745784507!2d-115.46878779296911!3d32.66304322342888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d77008bfc94543%3A0xcde39228ab80d437!2sUniversidad%20Aut%C3%B3noma%20de%20Baja%20California!5e0!3m2!1ses!2smx!4v1740250785203!5m2!1ses!2smx"
+                            width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="imagenes-circulares">
+            <div class="contenedor-imagenes">
+                <div class="imagen-circular-con-titulo">
+                    <h3 class="titulo-imagen">Rectoría</h3>
+                    <div class="imagen-circular">
+                        <img src="img/rectoria.jpg" alt="Imagen 1">
+                    </div>
+                </div>
+                <div class="imagen-circular-con-titulo">
+                    <h3 class="titulo-imagen">Campus Ensenada</h3>
+                    <div class="imagen-circular">
+                        <img src="img/campus/ensenada.jpg" alt="Imagen 1">
+                    </div>
+                </div>
+                <div class="imagen-circular-con-titulo">
+                    <h3 class="titulo-imagen">Campus Mexicali</h3>
+                    <div class="imagen-circular">
+                        <img src="img/campus/mexicali.jpg" alt="Imagen 2">
+                    </div>
+                </div>
+                <div class="imagen-circular-con-titulo">
+                    <h3 class="titulo-imagen">Campus Tijuana</h3>
+                    <div class="imagen-circular">
+                        <img src="img/campus/tijuana.jpg" alt="Imagen 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <h2 class="titulo-final">2025 &copy; SGMA | UABC</h2>
+        </footer>
+    </main>
+
+
+</body>
+
+</html>
