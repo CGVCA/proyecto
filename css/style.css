@@ -931,11 +931,14 @@
                 margin-bottom: 20px;
             }
             
+            .contenedor-reportes h3 {
+                font-size: 1.6rem;
+            }
+            
             .slider-container {
                 position: relative;
                 width: 100%;
                 max-width: 700px;
-                /* Ajusta el tamaño del slider */
                 margin: 0 auto;
                 overflow: hidden;
             }
@@ -943,25 +946,51 @@
             .galeria-reportes {
                 display: flex;
                 transition: transform 0.5s ease-in-out;
-                /* Animación suave al cambiar de slide */
+                width: 100%;
             }
             
             .reporte-item {
-                text-align: center;
-                width: 33.33%;
-                /* Cambié el ancho de cada item al 25% para mostrar 4 imágenes */
+                width: 25%;
+                /* Muestra 4 imágenes por fila */
                 flex-shrink: 0;
-                /* Impide que los elementos se encojan */
                 margin: 0 10px;
-                /* Añadí un pequeño margen entre los elementos */
+                text-align: center;
             }
             
             .img-reporte {
                 width: 90%;
-                /* Ajusta el ancho de las imágenes dentro de cada item */
                 height: auto;
                 border-radius: 8px;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+                cursor: pointer;
+            }
+            /* Estilos para los botones de navegación */
+            
+            .slider-container button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: hsla(273, 91%, 27%, 0.5);
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                cursor: pointer;
+                font-size: 1.5em;
+                z-index: 10;
+                border-radius: 50%;
+                transition: background-color 0.3s ease-in-out;
+            }
+            
+            .slider-container button:hover {
+                background-color: hsla(273, 91%, 27%, 0.8);
+            }
+            
+            .slider-container .prev {
+                left: 10px;
+            }
+            
+            .slider-container .next {
+                right: 10px;
             }
             
             .graficas-reportes {
@@ -981,7 +1010,7 @@
                 border-radius: 8px;
             }
             
-            button {
+            .galeria-reportes button {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
@@ -994,15 +1023,15 @@
                 z-index: 1;
             }
             
-            button:hover {
+            .galeria-reportes button:hover {
                 background-color: rgba(0, 0, 0, 0.8);
             }
             
-            .prev {
+            .galeria-reportes .prev {
                 left: 10px;
             }
             
-            .next {
+            .galeria-reportes .next {
                 right: 10px;
             }
             /* footer */
