@@ -41,20 +41,20 @@
                     <!-- Card para el formulario de contacto -->
                     <div class="card">
                         <h2 class="titulo">Contáctanos</h2>
-                        <form class="form-contacto">
+                        <form class="form-contacto" id="forma-contacto" autocomplete="off">
                             <div class="campo">
                                 <label for="nombre">Nombre:</label>
-                                <input type="text" id="nombre" name="nombre" required>
+                                <input type="text" id="txtNombre" name="nombre" required>
                             </div>
                             <div class="campo">
                                 <label for="email">Correo Electrónico:</label>
-                                <input type="email" id="email" name="email" required>
+                                <input type="email" id="txtEmail" name="email" required>
                             </div>
                             <div class="campo">
                                 <label for="mensaje">Mensaje:</label>
-                                <textarea id="mensaje" name="mensaje" required></textarea>
+                                <textarea id="txtAreaMensaje" name="mensaje" required></textarea>
                             </div>
-                            <button type="submit">Enviar</button>
+                            <button type="submit" onclick="register()">Enviar</button>
                         </form>
                     </div>
                     <!-- Contenedor para el mapa sin la clase .card -->
@@ -100,7 +100,7 @@
         </footer>
     </main>
 
-
+    <script src="js/enviarform.js"></script>
 </body>
 
 </html>
