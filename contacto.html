@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />-->
+    <link rel="stylesheet" type="text/css" href="libs/sweetalert2/alerts.css" media="all">
+    <script src="libs/sweetalert2/sweetalert2.min.js"></script>
+    <script src="libs/sweetalert2/jquery-3.1.1.min.js"></script>
     <title>Sistema de Movilidad Acad&eacute;mica</title>
 </head>
 
@@ -47,6 +49,14 @@
                                 <input type="text" id="txtNombre" name="nombre" required>
                             </div>
                             <div class="campo">
+                                <label for="ap">Apellido Paterno:</label>
+                                <input type="text" id="txtAp" name="ap" required>
+                            </div>
+                            <div class="campo">
+                                <label for="am">Apellido Materno:</label>
+                                <input type="text" id="txtAm" name="am" required>
+                            </div>
+                            <div class="campo">
                                 <label for="email">Correo Electrónico:</label>
                                 <input type="email" id="txtEmail" name="email" required>
                             </div>
@@ -55,11 +65,11 @@
                                 <textarea id="txtMensaje" name="mensaje" required></textarea>
                             </div>
                         </form>
-                        <button type="submit" onclick="registrar()">Enviar</button>
+                        <button type="submit" class="btn-contacto" onclick="registrar()">Enviar</button>
 
                     </div>
 
-                    <div id="list"></div>
+                    <!--<div id="list"></div>-->
                     <!-- Contenedor para el mapa sin la clase .card -->
                     <div class="mapa">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.864745784507!2d-115.46878779296911!3d32.66304322342888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d77008bfc94543%3A0xcde39228ab80d437!2sUniversidad%20Aut%C3%B3noma%20de%20Baja%20California!5e0!3m2!1ses!2smx!4v1740250785203!5m2!1ses!2smx"
@@ -107,6 +117,7 @@
     </main>
 
     <script src="js/enviarform.js"></script>
+    <script src="libs/lord-icon/lord-icon-2.1.0.js"></script>
 </body>
 
 </html>
