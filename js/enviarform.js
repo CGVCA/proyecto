@@ -11,7 +11,7 @@ const inputEmail = document.getElementById("txtEmail");
 const inputMsg = document.getElementById("txtMensaje");
 let p;
 
-function register() {
+function registrar() {
 
     //crear objeto
     //desplejar el oj
@@ -31,7 +31,7 @@ function display(enviarform) {
     const list = document.getElementById("list");
     p = `
         <div>
-            <p>${enviarform.nombre} - ${enviarform.email}</p>
+            <p>${enviarform.nombre} - ${enviarform.email} - ${enviarform.msg}</p>
         </div>
     `;
 
