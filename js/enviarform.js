@@ -1,5 +1,5 @@
 // Obtener los iconos para mostrar en el sweet alert
-let json = '../img/icons';
+let json = './img/icons';
 
 //Constructor
 function Enviarform(nombre, ap, am, email, msg) {
