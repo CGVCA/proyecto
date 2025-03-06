@@ -5,7 +5,7 @@ let json = '../img/icons';
 function Enviarform(nombre, ap, am, email, msg) {
     this.nombre = nombre;
     this.ap = ap;
-    this.am = nombre;
+    this.am = am;
     this.email = email;
     this.msg = msg;
 }
