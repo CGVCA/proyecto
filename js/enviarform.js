@@ -1,6 +1,3 @@
-// Obtener los iconos para mostrar en el sweet alert
-let json = './img/icons';
-
 //Constructor
 function Enviarform(nombre, ap, am, email, msg) {
     this.nombre = nombre;
@@ -59,7 +56,7 @@ function msg_enviado(nombre, ap, am, email, msg) {
         type: '',
         title: '',
         text: '',
-        html: '<lord-icon src="' + `${json}/email.json` + '" trigger="loop" colors="primary:#c69cf4,secondary:#f4f19c,tertiary:#30e8bd" style="width:148px;height:148px"></lord-icon>' +
+        html: '<lord-icon src="https://cdn.lordicon.com/dpggoewm.json" trigger="loop" colors="primary:#c69cf4,secondary:#f4f19c,tertiary:#30e8bd" style="width:148px;height:148px"></lord-icon>' +
             '<br>' +
             '<b><h3 class=\"green-text\"><strong>Mensaje enviado con éxito!</strong></h3></b>',
         animation: false,
@@ -75,7 +72,7 @@ function msg_enviado(nombre, ap, am, email, msg) {
             type: '',
             title: '',
             text: '',
-            html: '<lord-icon src="' + `${json}/email.json` + '" trigger="loop" colors="primary:#c69cf4,secondary:#f4f19c,tertiary:#30e8bd" style="width:148px;height:148px"></lord-icon>' +
+            html: '<lord-icon src="https://cdn.lordicon.com/dpggoewm.json" trigger="loop" colors="primary:#c69cf4,secondary:#f4f19c,tertiary:#30e8bd" style="width:148px;height:148px"></lord-icon>' +
                 '<br>' +
                 '<b><h3 class="green-text"><strong>Mensajes Recibidos</strong></h3></b><br>' +
                 '<table style="width:100%; border-collapse: collapse; text-align: left;">' +
@@ -116,7 +113,7 @@ function msg_error(msg) {
         type: '',
         title: '',
         text: '',
-        html: '<lord-icon src="' + `${json}/error.json` + '" trigger="loop" colors="primary:#ffc738,secondary:#e83a30" style="width:128px;height:128px"></lord-icon>' +
+        html: '<lord-icon src="https://cdn.lordicon.com/azxkyjta.json" trigger="loop" colors="primary:#ffc738,secondary:#e83a30" style="width:128px;height:128px"></lord-icon>' +
             '<br>' +
             '<b><h3><strong>Atención :(</strong></h3></b>' +
             '<h4 style=\"text-align: center !important; margin-top: 20px\"><span class=\"red-text\">' + msg + '</span></h4>' +
