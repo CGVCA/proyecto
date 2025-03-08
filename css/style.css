@@ -471,12 +471,11 @@
             }
             
             .step img {
-                width: 100%;
-                height: 100px;
-                margin: 0 auto 15px auto;
-                /* Centra la imagen en el card */
+                width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+                height: 150px; /* Ajusta la altura de la imagen */
+                object-fit: cover; /* Asegura que la imagen se recorte correctamente y mantenga su aspecto */
+                margin: 0 auto 15px auto; /* Centra la imagen dentro del contenedor */
                 display: block;
-                /* Asegura que la imagen sea un bloque */
             }
             
             .step h3 {
@@ -878,6 +877,15 @@
                 cursor: pointer;
                 font-size: 1rem;
                 transition: background-color 0.3s;
+            }
+
+            .btn-danger {
+                padding: 10px 20px;
+                background-color: #ff0000;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: 1rem;
             }
             
             .red-text {
