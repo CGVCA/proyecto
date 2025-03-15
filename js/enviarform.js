@@ -83,7 +83,7 @@ function displayCorreos() {
                 </lord-icon>
                 <br>
                 <h3 class="green-text"><strong>Mensajes Recibidos</strong></h3>
-                <br>
+                <br>             
                 <table style="width:100%; border-collapse: collapse; text-align: left;">
                     <thead>
                         <tr style="text-align: center;background: #4caf50;border-top-width: 1px;background: #4caf50;color: white;cursor: pointer;text-shadow: 0.1em 0.1em 0.15em #333;border: 4px 4px solid #7fe482;letter-spacing: 1px;">
